@@ -1,8 +1,7 @@
-
 import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowRight, SolarPanel, Battery, Zap } from "lucide-react";
+import { ArrowRight, Sun as SolarIcon, Battery, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { featuredProducts } from "@/data/products";
 import ProductCard from "@/components/ProductCard";
@@ -79,7 +78,7 @@ const HomePage = () => {
               <div className="relative h-[400px] md:h-[500px] w-full flex items-center justify-center">
                 <div className="absolute w-[300px] h-[300px] md:w-[400px] md:h-[400px] bg-solar-blue/10 rounded-full animate-spin-slow"></div>
                 <div className="w-[200px] h-[200px] md:w-[300px] md:h-[300px] bg-white p-8 rounded-full flex items-center justify-center shadow-lg z-10 animate-float">
-                  <SolarPanel className="w-full h-full text-solar-blue" />
+                  <SolarIcon className="w-full h-full text-solar-blue" />
                 </div>
                 <div className="absolute top-[10%] right-[10%] w-[80px] h-[80px] md:w-[100px] md:h-[100px] bg-white p-4 rounded-full flex items-center justify-center shadow-lg animate-float" style={{animationDelay: "1s"}}>
                   <Battery className="w-full h-full text-solar-accent" />
@@ -112,7 +111,7 @@ const HomePage = () => {
               viewport={{ once: true }}
             >
               <div className="bg-solar-blue/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                <SolarPanel className="h-8 w-8 text-solar-blue" />
+                <SolarIcon className="h-8 w-8 text-solar-blue" />
               </div>
               <h3 className="text-xl font-bold mb-4">High Efficiency Panels</h3>
               <p className="text-gray-600">

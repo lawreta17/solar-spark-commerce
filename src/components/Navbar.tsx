@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ShoppingCart, Menu, X, Sun, Battery, SolarPanel } from "lucide-react";
+import { ShoppingCart, Menu, X, Sun, Battery, Sun as SolarIcon } from "lucide-react";
 import { useShoppingCart } from "@/context/ShoppingCartContext";
 
 const Navbar = () => {
@@ -34,7 +34,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between py-4">
           <Link to="/" className="flex items-center space-x-2">
-            <SolarPanel className="h-8 w-8" />
+            <SolarIcon className="h-8 w-8" />
             <span className="text-xl font-bold text-solar-dark">SolarSpark</span>
           </Link>
 
@@ -53,7 +53,7 @@ const Navbar = () => {
               Products
             </Link>
             <div className="flex items-center space-x-2">
-              <SolarPanel className="h-5 w-5" />
+              <SolarIcon className="h-5 w-5" />
               <Link
                 to="/products?category=panels"
                 className="text-solar-dark hover:text-solar-blue transition-colors"
