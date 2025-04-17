@@ -1,7 +1,8 @@
 
 import { useEffect, useRef } from "react";
 import * as THREE from "three";
-import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
+// Update the import path for OrbitControls
+import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 
 interface SolarPanelAnimationProps {
   className?: string;
